@@ -34,7 +34,7 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "frontend-sfon.onrender.com",
+    origin: true,
     credentials: true,
   },
 });
